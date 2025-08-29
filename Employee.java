@@ -1,5 +1,5 @@
 
-public class Employee {
+public class Employeeee {
 
     // static variable: Shared by all objects of this class
     static String companyName;
@@ -9,35 +9,35 @@ public class Employee {
     int empId;
     public static void main(String[] args) {
         // Set an initial company name on the class
-        Employee.companyName = "Tech Solutions Inc.";
+        Employeeee.companyName = "Tech Solutions Inc.";
 
-        // Create 3 employee objects
-        Employee e1 = new Employee();
+        // Create 3 Employeeee objects
+        Employeeee e1 = new Employeeee();
         e1.empName = "Alice";
         e1.empId = 101;
 
-        Employee e2 = new Employee();
+        Employeeee e2 = new Employeeee();
         e2.empName = "David";
         e2.empId = 102;
 
-        Employee e3 = new Employee();
+        Employeeee e3 = new Employeeee();
         e3.empName = "Chen";
         e3.empId = 103;
         
-        System.out.println("--- Initial Employee Details ---");
-        System.out.println("Employee 1 Company: " + e1.companyName);
-        System.out.println("Employee 2 Company: " + e2.companyName);
-        System.out.println("Employee 3 Company: " + e3.companyName);
+        System.out.println("--- Initial Employeeee Details ---");
+        System.out.println("Employeeee 1 Company: " + Employeeee.companyName);
+        System.out.println("Employeeee 2 Company: " + Employeeee.companyName);
+        System.out.println("Employeeee 3 Company: " + Employeeee.companyName);
         System.out.println("-------------------------------------\n");
 
         // Change the company name once using one of the objects
         System.out.println("...Changing company name...\n");
-        e1.companyName = "Global Innovations Ltd.";
+        Employeeee.companyName = "Global Innovations Ltd.";
 
-        // Check if the change is reflected for all employees
+        // Check if the change is reflected for all Employeeees
         System.out.println("--- Details After Company Name Change ---");
-        System.out.println("Employee 1 Company: " + e1.companyName);
-        System.out.println("Employee 2 Company: " + e2.companyName);
-        System.out.println("Employee 3 Company: " + e3.companyName);
+        System.out.println("Employeeee 1 Company: " + Employeeee.companyName);
+        System.out.println("Employeeee 2 Company: " + Employeeee.companyName);
+        System.out.println("Employeeee 3 Company: " + Employeeee.companyName);
     }
 }
