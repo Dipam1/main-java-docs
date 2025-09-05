@@ -25,4 +25,4 @@ public class Assignment3{
 	}
 		scanner.close();
 		}
-}s
+}
