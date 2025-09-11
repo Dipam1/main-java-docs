@@ -1,10 +1,21 @@
-public class TestImport {
-	  public static void main(String[] args) {
-	                    System.out.println("TestImport");
-	                    System.out.println(new TestImport().add(1, 2));
-	    }
+//demonstrate inheritance	
 
-		public int add(int a, int b) {
-			return a + b;
-		}
+class Vehicle {
+	void run() {
+		System.out.println("Vehicle is running");
+	}
 }
+
+class Bike extends Vehicle {
+	void run() {
+		System.out.println("Bike is running safely");
+	}
+}
+
+public class TestImport {
+	public static void main(String args[]) {
+		Bike obj = new Bike();
+		obj.run();
+	}
+}
+
